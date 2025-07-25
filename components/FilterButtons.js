@@ -1,17 +1,27 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 export default function FilterButtons() {
+  const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={[styles.button, styles.active]}>
+      <TouchableOpacity style={[styles.button, styles.active]} onPress={() => navigation.navigate('Allmusic')}>
         <Text style={[styles.text, styles.activeText]}>ทั้งหมด</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button}>
+
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate('Music')}
+      >
         <Text style={styles.text}>เพลง</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.text}>พอดแคสต์</Text>
+
+    
+      
+      <TouchableOpacity style={styles.button}onPress={() => navigation.navigate('Playlist')}>
+        <Text style={styles.text}>Playlist</Text>
       </TouchableOpacity>
     </View>
   );
@@ -20,7 +30,6 @@ export default function FilterButtons() {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    justifyContent: 'flex-start',
     gap: 10,
     marginBottom: 20,
   },

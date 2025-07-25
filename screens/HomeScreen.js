@@ -5,7 +5,10 @@ import RecentPlayedGrid from '../components/RecentPlayedGrid';
 import SuggestedForYou from '../components/SuggestedForYou';
 import PopularStations from '../components/PopularStations';
 
+
+
 export default function HomeScreen({ navigation }) {
+  
   return (
     <ScrollView style={styles.container}>
       {/* ปุ่ม Filter */}
@@ -39,7 +42,7 @@ const styles = StyleSheet.create({
     padding: 15,
   },
   section: {
-    marginTop: 20,
+    marginTop: 50,
   },
   title: {
     fontSize: 20,

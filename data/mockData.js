@@ -33,7 +33,7 @@ export const suggestions = [
     id: '3',
     title: 'ฟังตอนทำงาน',
     desc: 'Focus & Productivity',
-    image: 'https://i.imgur.com/gp9rRpl.jpg',
+    image: 'https://i.imgur.com/Z0LHPpU.jpeg',
   },
 ];
 

@@ -1,7 +1,9 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function PlaylistScreen() {
+export default function Playlistscreen() {
+  const navigation = useNavigation();
   return (
 
     <View style={styles.container}>
